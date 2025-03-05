@@ -1,0 +1,16 @@
+# Configuration file for "sample_server"
+# How to use see:
+# https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-toml-syntax
+
+
+# "mlKemKeystore" is an optional value
+# mlKemKeystore = ""	# Type of STRING
+
+# "rsaKeystore" is an optional value
+# rsaKeystore = ""	# Type of STRING
+
+# "alias" is an optional value
+# alias = ""	# Type of STRING
+
+keystorePassword = ""	# Type of STRING
+
