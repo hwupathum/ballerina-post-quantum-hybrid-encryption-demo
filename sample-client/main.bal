@@ -2,8 +2,8 @@ import ballerina/crypto;
 import ballerina/http;
 import ballerina/io;
 
-configurable string mlKemKeystore = "../keystores/mlkem-768.pem";
-configurable string rsaKeystore = "../keystores/rsa-kem.pem";
+configurable string mlKemKeystore = "../keystores/mlkem-cert.pem";
+configurable string rsaKeystore = "../keystores/rsa-cert.pem";
 
 function encryptPayload(string message) returns crypto:HybridEncryptionResult|error {
 

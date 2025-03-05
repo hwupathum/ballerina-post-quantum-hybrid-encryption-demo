@@ -3,8 +3,8 @@ import ballerina/http;
 import ballerina/io;
 import ballerina/lang.array;
 
-configurable string mlKemKeystore = "../keystores/mlkem-768.p12";
-configurable string rsaKeystore = "../keystores/rsa-kem.p12";
+configurable string mlKemKeystore = "../keystores/mlkem-keystore.p12";
+configurable string rsaKeystore = "../keystores/rsa-keystore.p12";
 configurable string keystorePassword = ?;
 configurable string alias = "alias";
 
