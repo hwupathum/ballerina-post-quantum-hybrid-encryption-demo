@@ -2,13 +2,13 @@ import ballerina/crypto;
 import ballerina/http;
 import ballerina/io;
 
-configurable string mlKemKeystore = "../keystores/mlkem-cert.pem";
-configurable string rsaKeystore = "../keystores/rsa-cert.pem";
+configurable string mlKemCertFile = "../keystores/mlkem-cert.pem";
+configurable string rsaCertFile = "../keystores/rsa-cert.pem";
 
 function encryptPayload(string message) returns crypto:HybridEncryptionResult|error {
 
-    crypto:PublicKey kyberPublicKey = check crypto:decodeMlKem768PublicKeyFromCertFile(mlKemKeystore);
-    crypto:PublicKey rsaPublicKey = check crypto:decodeRsaPublicKeyFromCertFile(rsaKeystore);
+    crypto:PublicKey kyberPublicKey = check crypto:decodeMlKem768PublicKeyFromCertFile(mlKemCertFile);
+    crypto:PublicKey rsaPublicKey = check crypto:decodeRsaPublicKeyFromCertFile(rsaCertFile);
     return crypto:encryptRsaKemMlKem768Hpke(message.toBytes(), rsaPublicKey, kyberPublicKey);
 }
 
