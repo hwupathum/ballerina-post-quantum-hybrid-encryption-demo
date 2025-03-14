@@ -12,5 +12,5 @@
 # "alias" is an optional value
 # alias = ""	# Type of STRING
 
-keystorePassword = ""	# Type of STRING
+keystorePassword = "password"	# Type of STRING
 
