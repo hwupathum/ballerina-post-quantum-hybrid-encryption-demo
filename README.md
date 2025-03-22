@@ -4,7 +4,7 @@ Refer the article [Post-Quantum Hybrid Encryption with Ballerina](https://wso2.c
 
 ## Prerequisites
 
-- Ballerina Swan Lake (Update 9 or later)
+- Ballerina Swan Lake (Update 12 or later)
 - Java Development Kit (JDK) 11 or later
 
 ## Running the Demo
